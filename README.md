@@ -4,7 +4,7 @@
 
 <em><h5 align="center">(formerly Electron Launcher)</h5></em>
 
-[<p align="center"><img src="https://img.shields.io/github/actions/workflow/status/dscalzi/EradiumLauncher/build.yml?branch=master&style=for-the-badge" alt="gh actions">](https://github.com/dscalzi/EradiumLauncher/actions) [<img src="https://img.shields.io/github/downloads/dscalzi/EradiumLauncher/total.svg?style=for-the-badge" alt="downloads">](https://github.com/dscalzi/EradiumLauncher/releases) <img src="https://forthebadge.com/images/badges/winter-is-coming.svg"  height="28px" alt="winter-is-coming"></p>
+[<p align="center"><img src="https://img.shields.io/github/actions/workflow/status/dscalzi/EradiumLauncher/build.yml?branch=master&style=for-the-badge" alt="gh actions">](https://github.com/DarkShoro/EradiumLauncher/actions) [<img src="https://img.shields.io/github/downloads/dscalzi/EradiumLauncher/total.svg?style=for-the-badge" alt="downloads">](https://github.com/DarkShoro/EradiumLauncher/releases) <img src="https://forthebadge.com/images/badges/winter-is-coming.svg"  height="28px" alt="winter-is-coming"></p>
 
 <p align="center">Join modded servers without worrying about installing Java, Forge, or other mods. We'll handle that for you.</p>
 
@@ -39,18 +39,18 @@ This is not an exhaustive list. Download and install the launcher to gauge all i
 
 ## Downloads
 
-You can download from [GitHub Releases](https://github.com/dscalzi/EradiumLauncher/releases)
+You can download from [GitHub Releases](https://github.com/DarkShoro/EradiumLauncher/releases)
 
 #### Latest Release
 
-[![](https://img.shields.io/github/release/dscalzi/EradiumLauncher.svg?style=flat-square)](https://github.com/dscalzi/EradiumLauncher/releases/latest)
+[![](https://img.shields.io/github/release/dscalzi/EradiumLauncher.svg?style=flat-square)](https://github.com/DarkShoro/EradiumLauncher/releases/latest)
 
 #### Latest Pre-Release
-[![](https://img.shields.io/github/release/dscalzi/EradiumLauncher/all.svg?style=flat-square)](https://github.com/dscalzi/EradiumLauncher/releases)
+[![](https://img.shields.io/github/release/dscalzi/EradiumLauncher/all.svg?style=flat-square)](https://github.com/DarkShoro/EradiumLauncher/releases)
 
 **Supported Platforms**
 
-If you download from the [Releases](https://github.com/dscalzi/EradiumLauncher/releases) tab, select the installer for your system.
+If you download from the [Releases](https://github.com/DarkShoro/EradiumLauncher/releases) tab, select the installer for your system.
 
 | Platform | File |
 | -------- | ---- |
@@ -91,7 +91,7 @@ This section details the setup of a basic developmentment environment.
 **Clone and Install Dependencies**
 
 ```console
-> git clone https://github.com/dscalzi/EradiumLauncher.git
+> git clone https://github.com/DarkShoro/EradiumLauncher.git
 > cd EradiumLauncher
 > npm install
 ```
@@ -181,7 +181,7 @@ Note that you **cannot** open the DevTools window while using this debug configu
 
 Please give credit to the original author and provide a link to the original source. This is free software, please do at least this much.
 
-For instructions on setting up Microsoft Authentication, see https://github.com/dscalzi/EradiumLauncher/blob/master/docs/MicrosoftAuth.md.
+For instructions on setting up Microsoft Authentication, see https://github.com/DarkShoro/EradiumLauncher/blob/master/docs/MicrosoftAuth.md.
 
 ---
 
@@ -206,6 +206,6 @@ The best way to contact the developers is on Discord.
 [rendererprocess]: https://electronjs.org/docs/tutorial/application-architecture#main-and-renderer-processes 'Renderer Process'
 [chromedebugger]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome 'Debugger for Chrome'
 [discord]: https://discord.gg/zNWUXdt 'Discord'
-[wiki]: https://github.com/dscalzi/EradiumLauncher/wiki 'wiki'
+[wiki]: https://github.com/DarkShoro/EradiumLauncher/wiki 'wiki'
 [nebula]: https://github.com/dscalzi/Nebula 'dscalzi/Nebula'
-[v2branch]: https://github.com/dscalzi/EradiumLauncher/tree/ts-refactor 'v2 branch'
+[v2branch]: https://github.com/DarkShoro/EradiumLauncher/tree/ts-refactor 'v2 branch'

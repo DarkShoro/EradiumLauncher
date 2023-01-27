@@ -5,9 +5,9 @@
   "description": "Modded Minecraft Launcher",
   "author": "Daniel Scalzi (https://github.com/dscalzi/)",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/dscalzi/EradiumLauncher",
+  "homepage": "https://github.com/DarkShoro/EradiumLauncher",
   "bugs": {
-    "url": "https://github.com/dscalzi/EradiumLauncher/issues"
+    "url": "https://github.com/DarkShoro/EradiumLauncher"
   },
   "private": true,
   "main": "index.js",
@@ -49,6 +49,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dscalzi/EradiumLauncher.git"
+    "url": "git+https://github.com/DarkShoro/EradiumLauncher.git"
   }
 }

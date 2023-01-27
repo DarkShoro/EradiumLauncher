@@ -230,7 +230,7 @@ class JavaGuard extends EventEmitter {
      * Fetch the last open JDK binary.
      * 
      * HOTFIX: Uses Corretto 8 for macOS.
-     * See: https://github.com/dscalzi/EradiumLauncher/issues/70
+     * See: https://github.com/DarkShoro/EradiumLauncher/issues/70
      * See: https://github.com/AdoptOpenJDK/openjdk-support/issues/101
      * 
      * @param {string} major The major version of Java to fetch.
