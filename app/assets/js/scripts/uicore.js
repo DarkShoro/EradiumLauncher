@@ -51,6 +51,8 @@ if(!isDev){
                     info.darwindownload = `https://github.com/DarkShoro/EradiumLauncher/releases/download/v${info.version}/Eradium-Launcher-setup-${info.version}${process.arch === 'arm64' ? '-arm64' : '-x64'}.dmg`
                     showUpdateUI(info)
                 }
+
+                console.log(info);
                 
                 populateSettingsUpdateInformation(info)
                 break
