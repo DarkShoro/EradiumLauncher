@@ -2,7 +2,7 @@ appId: 'eradiumlauncher'
 productName: 'Eradium Launcher'
 artifactName: '${productName}-setup-${version}.${ext}'
 
-copyright: 'Copyright © 2018-2022 Daniel Scalzi'
+copyright: 'Copyright © 2022 - Eradium'
 
 asar: true
 compression: 'maximum'
