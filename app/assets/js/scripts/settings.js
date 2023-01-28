@@ -1356,19 +1356,19 @@ function populateJavaExecDetails(execPath){
 function populateJavaReqDesc() {
     const mcVer = DistroManager.getDistribution().getServer(ConfigManager.getSelectedServer()).getMinecraftVersion()
     if(Util.mcVersionAtLeast('1.17', mcVer)) {
-        settingsJavaReqDesc.innerHTML = 'Requires Java 17 x64.'
+        settingsJavaReqDesc.innerHTML = 'Requis : Java 17 x64.'
     } else {
-        settingsJavaReqDesc.innerHTML = 'Requires Java 8 x64.'
+        settingsJavaReqDesc.innerHTML = 'Requis Java 8 x64.'
     }
 }
 
 function populateJvmOptsLink() {
     const mcVer = DistroManager.getDistribution().getServer(ConfigManager.getSelectedServer()).getMinecraftVersion()
     if(Util.mcVersionAtLeast('1.17', mcVer)) {
-        settingsJvmOptsLink.innerHTML = 'Available Options for Java 17 (HotSpot VM)'
+        settingsJvmOptsLink.innerHTML = 'Options disponibles pour Java 17'
         settingsJvmOptsLink.href = 'https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html#extra-options-for-java'
     } else {
-        settingsJvmOptsLink.innerHTML = 'Available Options for Java 8 (HotSpot VM)'
+        settingsJvmOptsLink.innerHTML = 'Options disponibles pour Java 8'
         settingsJvmOptsLink.href = `https://docs.oracle.com/javase/8/docs/technotes/tools/${process.platform === 'win32' ? 'windows' : 'unix'}/java.html`
     }
 }
@@ -1425,7 +1425,7 @@ function populateVersionInformation(version, valueElement, titleElement, checkEl
         titleElement.style.color = '#ff886d'
         checkElement.style.background = '#ff886d'
     } else {
-        titleElement.innerHTML = 'Stable Release'
+        titleElement.innerHTML = 'Version stable'
         titleElement.style.color = null
         checkElement.style.background = null
     }
@@ -1464,7 +1464,7 @@ function populateReleaseNotes(){
         },
         timeout: 2500
     }).catch(err => {
-        settingsAboutChangelogText.innerHTML = 'Failed to load release notes.'
+        settingsAboutChangelogText.innerHTML = 'Échec du chargement des notes de version.'
     })
 }
 
@@ -1512,27 +1512,27 @@ function settingsUpdateButtonStatus(text, disabled = false, handler = null){
  */
 function populateSettingsUpdateInformation(data){
     if(data != null){
-        settingsUpdateTitle.innerHTML = `New ${isPrerelease(data.version) ? 'Pre-release' : 'Release'} Available`
+        settingsUpdateTitle.innerHTML = `Nouvelle ${isPrerelease(data.version) ? 'pré-version' : 'version'} disponible`
         settingsUpdateChangelogCont.style.display = null
         settingsUpdateChangelogTitle.innerHTML = data.releaseName
         settingsUpdateChangelogText.innerHTML = data.releaseNotes
         populateVersionInformation(data.version, settingsUpdateVersionValue, settingsUpdateVersionTitle, settingsUpdateVersionCheck)
         
         if(process.platform === 'darwin'){
-            settingsUpdateButtonStatus('Download from GitHub<span style="font-size: 10px;color: gray;text-shadow: none !important;">Close the launcher and run the dmg to update.</span>', false, () => {
+            settingsUpdateButtonStatus('Télécharger depuis GitHub<span style="font-size: 10px;color: gray;text-shadow: none !important;">Fermez le lanceur et exécutez le dmg pour mettre à jour.</span>', false, () => {
                 shell.openExternal(data.darwindownload)
             })
         } else {
-            settingsUpdateButtonStatus('Downloading..', true)
+            settingsUpdateButtonStatus('Téléchargement..', true)
         }
     } else {
-        settingsUpdateTitle.innerHTML = 'You Are Running the Latest Version'
+        settingsUpdateTitle.innerHTML = 'Vous utilisez la dernière version'
         settingsUpdateChangelogCont.style.display = 'none'
         populateVersionInformation(remote.app.getVersion(), settingsUpdateVersionValue, settingsUpdateVersionTitle, settingsUpdateVersionCheck)
-        settingsUpdateButtonStatus('Check for Updates', false, () => {
+        settingsUpdateButtonStatus('Vérifier les mises à jour', false, () => {
             if(!isDev){
                 ipcRenderer.send('autoUpdateAction', 'checkForUpdate')
-                settingsUpdateButtonStatus('Checking for Updates..', true)
+                settingsUpdateButtonStatus('Vérification des mises à jour..', true)
             }
         })
     }
