@@ -1,5 +1,5 @@
 appId: 'eradiumlauncher'
-productName: 'Eradium Launcher'
+productName: 'Eradium-Launcher'
 artifactName: '${productName}-setup-${version}.${ext}'
 
 copyright: 'Copyright © 2022 - Eradium'
