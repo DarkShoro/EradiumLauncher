@@ -66,7 +66,7 @@ exports.scanForDropinMods = function(modsDir, version) {
             }
         }
     }
-    return modsDiscovered
+    return []
 }
 
 /**
@@ -77,14 +77,7 @@ exports.scanForDropinMods = function(modsDir, version) {
  */
 exports.addDropinMods = function(files, modsdir) {
 
-    exports.validateDir(modsdir)
-
-    for(let f of files) {
-        if(MOD_REGEX.exec(f.name) != null) {
-            fs.moveSync(f.path, path.join(modsdir, f.name))
-        }
-    }
-
+    return
 }
 
 /**
